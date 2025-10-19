@@ -16,6 +16,9 @@ class TestCalculator(unittest.TestCase):
         calc = Calculator()
         result = calc.multiply(4, 3)
         self.assertEqual(result, 12)  # Expect 4 * 3 = 12
-
+    def test_divide(self):
+        calc = Calculator()
+        result = calc.divide(7, 2)
+        self.assertEqual(result, 3)  # Expect 7 / 2 = 3 (integer division)
 if __name__ == "__main__":
     unittest.main()
